@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function page() {
   return (
     <div>
-        <div className='min-h-screen flex flex-col items-center py-6 gap-16'>
+        <div className='flex flex-col items-center py-6 gap-16'>
         <h2 className="text-4xl font-medium tracking-tight text-center">
         Workflow
         </h2>
