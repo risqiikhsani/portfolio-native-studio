@@ -3,6 +3,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
+import { DialogTitle } from "@radix-ui/react-dialog";
+import Link from "next/link";
 
 export const NavigationSheet = () => {
   return (
@@ -14,7 +16,8 @@ export const NavigationSheet = () => {
       </SheetTrigger>
       <SheetContent>
         <Logo />
-        <NavMenu orientation="vertical" className="mt-12" />
+        <DialogTitle></DialogTitle>
+        <NavMenu orientation="vertical" />
       </SheetContent>
     </Sheet>
   );

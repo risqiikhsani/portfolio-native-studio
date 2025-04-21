@@ -41,14 +41,13 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen dark:bg-black">
+          <div className="min-h-screen ">
             <div className="fixed top-0 inset-x-4 h-16">
               <Navbar04Page />
             </div>
-            <div className="">{children}</div>
+            <div className="mt-28 container mx-auto">{children}</div>
 
             <Footer05Page />
           </div>

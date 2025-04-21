@@ -1,20 +1,19 @@
-import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
+import { InstagramIcon, MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 const Contact01Page = () => (
   <div className="min-h-screen flex items-center justify-center">
     <div className="text-center">
-      <b className="text-muted-foreground">Contact Us</b>
-      <h2 className="mt-3 text-2xl md:text-4xl font-bold tracking-tight">
-        Get In Touch
-      </h2>
+      <h2 className="text-4xl font-medium tracking-tight text-center">
+          Contact Us
+        </h2>
       <p className="mt-4 text-base sm:text-lg">
-        Our friendly team is always here to chat.
+        Let's connect
       </p>
-      <div className="max-w-screen-xl mx-auto py-24 grid md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-10 px-6 md:px-0">
+      <div className="max-w-screen-xl mx-auto py-24 grid md:grid-cols-2 gap-16 md:gap-10 px-6 md:px-0">
         <div className="text-center flex flex-col items-center">
           <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
-            <MailIcon />
+            <MailIcon className="text-red-400"/>
           </div>
           <h3 className="mt-6 font-semibold text-xl">Email</h3>
           <p className="mt-2 text-muted-foreground">
@@ -22,14 +21,14 @@ const Contact01Page = () => (
           </p>
           <Link
             className="mt-4 font-medium text-primary"
-            href="mailto:akashmoradiya3444@gmail.com"
+            href="mailto:nativestudioo@gmail.com"
           >
-            akashmoradiya3444@gmail.com
+            nativestudioo@gmail.com
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
           <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
-            <MapPinIcon />
+            <MapPinIcon className="text-green-400"/>
           </div>
           <h3 className="mt-6 font-semibold text-xl">Office</h3>
           <p className="mt-2 text-muted-foreground">
@@ -40,20 +39,35 @@ const Contact01Page = () => (
             href="https://map.google.com"
             target="_blank"
           >
-            100 Smith Street Collingwood <br /> VIC 3066 AU
+            Jakarta, Indonesia
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
           <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
-            <PhoneIcon />
+            <PhoneIcon className="text-green-400"/>
           </div>
-          <h3 className="mt-6 font-semibold text-xl">Phone</h3>
+          <h3 className="mt-6 font-semibold text-xl">Whatsapp Messanger</h3>
           <p className="mt-2 text-muted-foreground">Mon-Fri from 8am to 5pm.</p>
           <Link
             className="mt-4 font-medium text-primary"
-            href="tel:akashmoradiya3444@gmail.com"
+            href="https://wa.me/+6287874961309"
+            target="_blank"
           >
-            +1 (555) 000-0000
+            +62 878 7496 1309
+          </Link>
+        </div>
+        <div className="text-center flex flex-col items-center">
+          <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+            <InstagramIcon className="text-red-400"/>
+          </div>
+          <h3 className="mt-6 font-semibold text-xl">Instagram</h3>
+          <p className="mt-2 text-muted-foreground">View or work.</p>
+          <Link
+            className="mt-4 font-medium text-primary"
+            href="https://www.instagram.com/nativestudio.o/"
+            target="_blank"
+          >
+            @nativestudio.o
           </Link>
         </div>
       </div>

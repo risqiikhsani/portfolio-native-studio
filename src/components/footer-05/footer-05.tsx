@@ -10,28 +10,24 @@ import Link from "next/link";
 
 const footerLinks = [
   {
-    title: "Overview",
-    href: "#",
+    title: "Home",
+    href: "/",
   },
   {
-    title: "Features",
-    href: "#",
+    title: "Projects",
+    href: "/works",
   },
   {
-    title: "Pricing",
-    href: "#",
+    title: "How it works",
+    href: "/howitworks",
   },
   {
-    title: "Careers",
-    href: "#",
+    title: "About",
+    href: "/about",
   },
   {
-    title: "Help",
-    href: "#",
-  },
-  {
-    title: "Privacy",
-    href: "#",
+    title: "Contact",
+    href: "/contact",
   },
 ];
 
@@ -43,9 +39,9 @@ const Footer05Page = () => {
         <div className="max-w-screen-xl mx-auto">
           <div className="py-12 flex flex-col justify-start items-center">
             {/* Logo */}
-            <Image src="/logos/logo2.png" alt="logo" width={50} height={50}/>
+            <Image src="/logos/logo2.png" alt="logo" width={50} height={50} className="dark:invert"/>
 
-            <ul className="mt-6 flex items-center gap-4 flex-wrap">
+            <ul className="mt-6 flex items-center gap-4 flex-wrap p-2">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
                   <Link
@@ -69,7 +65,7 @@ const Footer05Page = () => {
               . All rights reserved.
             </span>
 
-            <div className="flex items-center gap-5 text-muted-foreground">
+            {/* <div className="flex items-center gap-5 text-muted-foreground">
               <Link href="#" target="_blank">
                 <TwitterIcon className="h-5 w-5" />
               </Link>
@@ -82,7 +78,7 @@ const Footer05Page = () => {
               <Link href="#" target="_blank">
                 <GithubIcon className="h-5 w-5" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
