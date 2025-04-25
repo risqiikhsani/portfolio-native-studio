@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
+
+import ImageGallery from '@/components/image-gallery';
 
 
 const images = [
@@ -35,18 +35,11 @@ const images = [
     }
 ]
 
+
 export default function page() {
   return (
     <div>
-        <div className='min-h-screen flex flex-col items-center py-6 gap-16'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                {images.map((image) => (
-                    <div key={image.id} className='overflow-hidden'>
-                        <Image src={image.src} alt={image.alt} width={500} height={500} className='object-cover ' />
-                    </div>
-                ))}
-            </div>
-        </div>
+        <ImageGallery images={images} />
     </div>
   )
 }
