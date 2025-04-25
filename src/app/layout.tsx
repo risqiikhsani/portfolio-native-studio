@@ -48,7 +48,6 @@ export default function RootLayout({
               <Navbar04Page />
             </div>
             <div className="mt-28 container mx-auto">{children}</div>
-
             <Footer05Page />
           </div>
         </ThemeProvider>

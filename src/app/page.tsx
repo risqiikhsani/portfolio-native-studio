@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>
+    <div className='flex items-center justify-center py-[200px]'>
       <Hero01/>
       {/* <Features07Page/>
       <Testimonial01/>

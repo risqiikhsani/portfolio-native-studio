@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 const Hero01 = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6">
+    <div className="flex items-center justify-center px-6">
       <div className="relative">
         {/* Background Image */}
         <Image
@@ -27,8 +27,7 @@ const Hero01 = () => {
           />
 
           <p className="mt-2 text-[17px] md:text-lg">
-            Interior Design Studio focusing on experiential of space with unique
-            narratives through the exploration of materials and forms.
+          Interior design studio that creates distinctive spaces by blending materials and forms into immersive narratives.
           </p>
 
           <div className="mt-12 flex items-center justify-center gap-4"></div>
