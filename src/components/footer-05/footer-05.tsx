@@ -39,7 +39,13 @@ const Footer05Page = () => {
         <div className="max-w-screen-xl mx-auto">
           <div className="py-12 flex flex-col justify-start items-center">
             {/* Logo */}
-            <Image src="/logos/logo2.png" alt="logo" width={50} height={50} className="dark:invert"/>
+            <Image
+              src="/logos/logo2.png"
+              alt="logo"
+              width={50}
+              height={50}
+              className="dark:invert"
+            />
 
             <ul className="mt-6 flex items-center gap-4 flex-wrap p-2">
               {footerLinks.map(({ title, href }) => (
@@ -58,11 +64,7 @@ const Footer05Page = () => {
           <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
             {/* Copyright */}
             <span className="text-muted-foreground">
-              &copy; {new Date().getFullYear()}{" "}
-              <Link href="/" target="_blank">
-                Brisbhanu
-              </Link>
-              . All rights reserved.
+              &copy; {new Date().getFullYear()} Brisbhanu . All rights reserved.
             </span>
 
             {/* <div className="flex items-center gap-5 text-muted-foreground">

@@ -35,7 +35,7 @@ const Features02Page = () => {
           {features.map((feature) => (
             <Link key={feature.title} href={feature.url} className="hover:cursor-pointer hover:border-2 hover:border-primary hover:rounded-2xl p-4">
             <div className="flex flex-col text-start gap-2">
-              <Image src={feature.image} alt="logo" width={800} height={800} className=""/>
+              <Image src={feature.image} alt="logo" width={800} height={800} className="rounded-md"/>
               <span className="text-2xl font-light tracking-tight">
                 {feature.title}
               </span>
